@@ -1,11 +1,10 @@
 import React from 'react';
-import TodoList from './TodoList';
+import Counter from './Counter';
+import './style.css';
 
 function App() {
   return (
-    
-    <TodoList/>
-  
+    <Counter/>
   )
 }
 
