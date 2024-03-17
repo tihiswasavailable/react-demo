@@ -1,26 +1,19 @@
 // import useState hook
-import React, { useState } from "react";
+import React from "react";
 import './style.css';
 
 
 function Counter() {
-    // Create a state variable called count
-    const [count, setCount] = useState(0);
-
-    function decrementCount() {
-        setCount(prevCount => prevCount - 1);
-    }
-
-    function incrementCount() {
-        setCount(prevCount => prevCount + 1);
-    }
-
+    // create a state array with a count variable and a setCount function
+   
     return(
+        // add onClick event handler for increment and decrement buttons
+        // add count variable to the span
     <div>
         <h1>Hello and welcome!</h1>
-        <button className="button1" onClick={ decrementCount }>-</button>
-        <span>{ count }</span>
-        <button className="button2" onClick={ incrementCount }>+</button>
+        <button className="button1">-</button>
+        <span>0</span>
+        <button className="button2">+</button>
     </div>
     )
 }
